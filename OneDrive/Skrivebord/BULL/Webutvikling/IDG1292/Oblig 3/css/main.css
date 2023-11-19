@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Proxima Nova", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.logo13 {
+    display: block;
+    max-width: 130px;
+    height: 17vh;
+   /* position: fixed; */
+   z-index: 1;
+  
+}
+
+nav {
+    background: #cfd4cf;
+    padding: 40px;
+    overflow: hidden;
+    text-align: center;
+    top: 0;
+    width: 100%;
+ 
+}
+
+.logo13, nav {
+  position: fixed;
+}
+
+nav li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.6em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+nav li:hover {
+    background-color: rgb(24, 169, 5);
+    border-radius: 15px;
+}
+
+/*Information page*/
+.cover-viewport {
+    background-image: url(../assets/img/jonflobrant.png);
+    background-size: cover;
+    height: 100vh; 
+}
+
+#cover-text {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-size: 5em;
+  color: #2b4f2d;
+  text-align: center;
+  padding-top: 20%;
+  text-shadow: 0px 0px 5px rgb(124, 126, 124);
+    
+}
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #2196F3;
+    height: 100vh;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .grid-item> div > ol {
+    list-style-position: inside;
+    ;
+  }
+
+.grid-item > p {
+
+}
+/*About page*/
+.structure {
+}
+h1, h2 {
+  text-align: center;
+  color: rgb(23, 120, 100);
+}
+.structure > .paragraph {
+  margin-bottom: 20px;
+}
+
+main >h1::after {
+content: url(../assets/img/eco-plant.png.svg);
+width: 24px; 
+height: 24px; 
+display: inline-block;
+margin-left: 10px; 
+vertical-align: middle; /
+}
+.structure > p {
+  text-align:end;
+  width: 60%;
+  margin: 0;
+}
+
+p {
+  color: black;
+}
+  /*Game page*/
+
+.collapsible {
+ margin: 60px auto;
+ width: 580px;
+}
+
+.collapsible li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: pink;
+}
+
+.collapsible li label {
+ display: flex;
+ align-items: center;
+ padding: 10px;
+ font-size: 20px;
+ font-weight: 500;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.collapsible .game-content {
+  color: green;
+  padding: 0 20px;
+  line-height: 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s, padding 0.6s;
+}
+
+label::before {
+  content: '+';
+  margin-right: 20px;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.collapsible input[type="radio"]:checked + label + .game-content {
+  max-height: 300px;
+  padding: 20px 10px 10px;
+} 
+
+.collapsible input[type="radio"]:checked + label::before {
+ content: '-';
+}
+
+/*CONTACTFORM*/
+
+ form {
+      background-color: rgb(168, 188, 168);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin: 0 auto;
+      padding: 2%;
+      max-width: 800px;
+ 
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 15px;
+      }
+  
+      textarea {
+        resize: vertical;
+      }
+  
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+  
+      button:hover {
+        background-color: #45a049;
+      }
+  
+      /*FOOTER*/
+footer {
+    background-color: #cfd4cf;
+    font-size: 16px;
+    padding: 10px;
+}
+   
+   .ntnulogo{
+    width: 20vw;
+    margin-top: 10px;
+   
+   }
+   
+
+    
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-container>div {
+background-color: #2196F3;
+
+  }
+  .footer-logo-p>p{
+    color: red;
+    margin-top:80px;
+
+  }
+  .footer-container>div >p{
+    background-color: #45a049;
+  
+      }
+      
+      #map-container{
+        display: grid;
+        justify-content: end;
+        }
+        
+  iframe {
+       border: 1px solid black;
+       width: 20vw;
+       height: 25vh;
+   }
+   
+   
+  
+  
+  
+  
